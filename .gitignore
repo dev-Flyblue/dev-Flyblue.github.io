@@ -22,6 +22,16 @@ package-lock.json
 !.vscode/extensions.json
 !.vscode/tasks.json
 
+# Local Ruby installation
+ruby/
+
+# Local reference / design files
+reference.txt
+my/
+
+# Startup script (local only)
+serve.bat
+
 # Misc
 _sass/vendors
 assets/js/dist

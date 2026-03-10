@@ -1,0 +1,147 @@
+---
+---
+
+/* prettier-ignore */
+@use 'main
+{%- if jekyll.environment == "production" -%}
+  .bundle
+{%- endif -%}
+';
+
+/* ==========================================
+   Sidebar: dark red vignette glow
+   Center bright, edges dark
+   ========================================== */
+#sidebar {
+  background: linear-gradient(
+    180deg,
+    #1a0808 0%,
+    #3d1518 15%,
+    #6b2528 40%,
+    #7a2e30 50%,
+    #6b2528 60%,
+    #3d1518 85%,
+    #1a0808 100%
+  ) !important;
+  border-right: none !important;
+
+  .site-title {
+    color: rgba(255, 255, 255, 0.9) !important;
+  }
+
+  .site-subtitle {
+    color: rgba(255, 255, 255, 0.55) !important;
+  }
+
+  a {
+    color: rgba(255, 255, 255, 0.7) !important;
+
+    &:hover {
+      color: #fff !important;
+    }
+  }
+
+  .nav-item.active .nav-link {
+    color: #fff !important;
+    background-color: rgba(255, 255, 255, 0.1) !important;
+  }
+
+  .nav-link:hover {
+    background-color: rgba(255, 255, 255, 0.08) !important;
+  }
+
+  #avatar {
+    box-shadow: rgba(255, 255, 255, 0.45) 0 0 0 2px !important;
+  }
+
+  .sidebar-bottom {
+    a, #mode-toggle {
+      color: rgba(255, 255, 255, 0.55) !important;
+      background-color: rgba(255, 255, 255, 0.06) !important;
+      box-shadow: rgba(255, 255, 255, 0.12) 0 0 0 1px !important;
+
+      &:hover {
+        color: #fff !important;
+        background-color: rgba(255, 255, 255, 0.14) !important;
+      }
+    }
+
+    .icon-border {
+      background-color: rgba(255, 255, 255, 0.35) !important;
+    }
+  }
+}
+
+/* ==========================================
+   Light mode: warm paper / parchment feel
+   ========================================== */
+html:not([data-mode]),
+html[data-mode='light'] {
+  --main-bg: #fefefd;
+  --mask-bg: #d6d0c4;
+  --main-border-color: #e8e2d6;
+
+  --text-color: #1a1a1a;
+  --text-muted-color: #5a5a5a;
+  --heading-color: #000000;
+  --label-color: #5c5750;
+  --blockquote-border-color: #e0dace;
+  --blockquote-text-color: #7a756c;
+  --link-color: #9b2c2c;
+  --link-underline-color: #ddd5c8;
+
+  --button-bg: #fefefd;
+  --btn-border-color: #e0dace;
+  --btn-backtotop-color: #6b6560;
+  --btn-backtotop-border-color: #e8e2d6;
+
+  --card-bg: #fefefd;
+  --card-hover-bg: #ede8de;
+  --card-shadow: rgba(120, 100, 70, 0.06) 0 2px 6px 0,
+    rgba(180, 170, 150, 0.12) 0 0 0 1px;
+
+  --topbar-bg: rgba(252, 250, 245, 0.75);
+  --topbar-text-color: #4a4540;
+  --search-border-color: #e0dace;
+
+  --post-list-text-color: #5c5750;
+  --btn-paginator-hover-color: #ede8de;
+
+  --toc-highlight: #9b2c2c;
+
+  --tb-odd-bg: #f5f0e6;
+  --tb-even-bg: #fefefd;
+  --tb-border-color: #e8e2d6;
+
+  --tag-border: #e0dace;
+  --tag-shadow: #e8e2d6;
+  --tag-hover: #e8e2d6;
+  --search-tag-bg: #f5f0e6;
+
+  --categories-border: rgba(60, 50, 30, 0.1);
+  --categories-hover-bg: #e8e2d6;
+
+  --timeline-color: rgba(60, 50, 30, 0.08);
+  --timeline-node-bg: #c4bead;
+
+  --language-border-color: #e8e2d6;
+  --highlight-bg-color: #f5f0e6;
+  --inline-code-bg: rgba(60, 50, 30, 0.06);
+  --code-color: #3a3632;
+  --code-header-text-color: #b0a898;
+  --code-header-muted-color: #e0dace;
+  --code-header-icon-color: #c4bead;
+
+  --sidebar-bg: #fefefd;
+  --sidebar-border-color: #e8e2d6;
+
+  --footnote-target-bg: #f0ece0;
+  --dash-color: #c4bead;
+  --kbd-wrap-color: #c4bead;
+  --kbd-bg-color: #fefefd;
+
+  --prompt-tip-bg: rgba(123, 200, 144, 0.15);
+  --prompt-info-bg: rgba(180, 210, 240, 0.25);
+  --prompt-warning-bg: rgba(240, 210, 140, 0.25);
+  --prompt-danger-bg: rgba(220, 160, 160, 0.2);
+}
