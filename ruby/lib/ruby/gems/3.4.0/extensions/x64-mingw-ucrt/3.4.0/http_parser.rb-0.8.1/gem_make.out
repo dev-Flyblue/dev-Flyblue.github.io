@@ -1,0 +1,20 @@
+current directory: D:/AI/my-boke/ruby/lib/ruby/gems/3.4.0/gems/http_parser.rb-0.8.1/ext/ruby_http_parser
+D:/AI/my-boke/ruby/bin/ruby.exe extconf.rb
+creating Makefile
+
+current directory: D:/AI/my-boke/ruby/lib/ruby/gems/3.4.0/gems/http_parser.rb-0.8.1/ext/ruby_http_parser
+make DESTDIR\= sitearchdir\=./.gem.20260310-7400-f3u6d3 sitelibdir\=./.gem.20260310-7400-f3u6d3 clean
+
+current directory: D:/AI/my-boke/ruby/lib/ruby/gems/3.4.0/gems/http_parser.rb-0.8.1/ext/ruby_http_parser
+make DESTDIR\= sitearchdir\=./.gem.20260310-7400-f3u6d3 sitelibdir\=./.gem.20260310-7400-f3u6d3
+generating ruby_http_parser-x64-mingw-ucrt.def
+compiling ruby_http_parser.c
+compiling ryah_http_parser.c
+linking shared-object ruby_http_parser.so
+
+current directory: D:/AI/my-boke/ruby/lib/ruby/gems/3.4.0/gems/http_parser.rb-0.8.1/ext/ruby_http_parser
+make DESTDIR\= sitearchdir\=./.gem.20260310-7400-f3u6d3 sitelibdir\=./.gem.20260310-7400-f3u6d3 install
+/usr/bin/install -c -m 0755 ruby_http_parser.so ./.gem.20260310-7400-f3u6d3
+
+current directory: D:/AI/my-boke/ruby/lib/ruby/gems/3.4.0/gems/http_parser.rb-0.8.1/ext/ruby_http_parser
+make DESTDIR\= sitearchdir\=./.gem.20260310-7400-f3u6d3 sitelibdir\=./.gem.20260310-7400-f3u6d3 clean

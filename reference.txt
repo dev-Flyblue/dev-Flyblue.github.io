@@ -1,0 +1,102 @@
+搭建个人博客是个很棒的想法！2026年静态博客方案依然超级流行，尤其是免费、速度快、维护简单的路线。
+
+我看到你提到想了解 **Jekyll + Chirpy** 的最新安装指南，Chirpy 是目前 Jekyll 生态里最受欢迎的主题之一（极简、响应式、暗黑模式、技术写作友好、支持数学公式/流程图/标签/归档等），特别适合写技术笔记或个人博客。
+
+下面给你推荐几条主流路径（包括 Jekyll + Chirpy），并附上 Chirpy 的最新起步步骤（基于官方文档，2026年最新版）。
+
+### 快速对比（2026视角，适合中文用户）
+- **最推荐零折腾**：语雀 / Notion + Super.so（5分钟上线）
+- **免费 + 速度最快 + 完全掌控**：Hexo / Hugo / Jekyll + GitHub Pages / Cloudflare Pages
+- **Jekyll + Chirpy**：颜值高、功能丰富、GitHub Pages 原生支持（无需额外配置 Actions），特别适合写技术/知识型博客
+
+如果你愿意学一点 Git + Markdown，Jekyll + Chirpy 是非常香的选择，很多程序员2025-2026年都转这条路线了。
+
+### Jekyll + Chirpy 最新安装 & 起步指南（2026年3月最新）
+官方文档主要在：https://chirpy.cotes.page/ 和 GitHub Wiki https://github.com/cotes2020/jekyll-theme-chirpy/wiki
+
+#### 1. 前置要求
+- 安装 **Ruby**（≥ 2.7.0，推荐 3.x 版本）
+- 安装 **RubyGems**、**Jekyll** 和 **Bundler**
+- 安装 **Git**
+
+按操作系统：
+- **macOS**：用 Homebrew `brew install ruby`，然后 `gem install jekyll bundler`
+- **Windows**：安装 RubyInstaller（带 DevKit），然后同上 gem install
+- **Linux**（Ubuntu/Debian）：`sudo apt update && sudo apt install ruby-full build-essential zlib1g-dev`，然后 gem install
+
+官方 Jekyll 安装：https://jekyllrb.com/docs/installation/
+
+安装完验证：
+```bash
+ruby -v
+gem -v
+jekyll -v
+```
+
+#### 2. 最推荐方式：用 Chirpy Starter（官方推荐，升级简单）
+这是零基础最友好方式，不用手动 gem install 主题。
+
+步骤：
+1. 登录 GitHub → 访问 https://github.com/cotes2020/chirpy-starter
+2. 点击绿色 **Use this template** → **Create a new repository**
+3. 仓库名必须是：**你的用户名.github.io**（比如 shhn.github.io），这样才能自动用 GitHub Pages
+4. 创建后，**Clone** 到本地：
+   ```bash
+   git clone https://github.com/你的用户名/你的用户名.github.io.git
+   cd 你的用户名.github.io
+   ```
+
+5. 安装依赖：
+   ```bash
+   bundle install
+   ```
+
+6. 本地运行预览（超级重要，先看效果）：
+   ```bash
+   bundle exec jekyll serve
+   ```
+   浏览器打开 http://127.0.0.1:4000 就能看到博客了！
+
+7. 写第一篇文章：
+   - 在 `_posts` 文件夹新建 Markdown 文件，命名格式：`YYYY-MM-DD-文章标题.md`
+   - 文件开头加 Front Matter（必须）：
+     ```yaml
+     ---
+     title: "我的第一篇博客"
+     date: 2026-03-10 03:00:00 +0800
+     categories: [生活]
+     tags: [hello-world]
+     ---
+     正文用 Markdown 写，支持 LaTeX 公式、Mermaid 图表等。
+     ```
+
+8. 提交 & 推送：
+   ```bash
+   git add .
+   git commit -m "Add first post"
+   git push origin main
+   ```
+
+9. 开启 GitHub Pages：
+   - 仓库 Settings → Pages → Source 选 main 分支 → Save
+   - 等 1-2 分钟，访问 https://你的用户名.github.io 就上线了！
+
+#### 3. 自定义小Tips（Chirpy 很强大）
+- 编辑 `_config.yml` 改标题、描述、社交链接、avatar 等
+- 支持暗黑模式（默认就有）
+- 加数学公式：用 `$$...$$` 或 `$...$`
+- 加流程图：用 Mermaid 语法
+- 自定义域名：买个 .top/.xyz 域名（阿里云/Namesilo 几十块），然后在仓库 Settings → Pages 加 Custom domain
+- 国内加速：用 Cloudflare Pages 部署（fork Chirpy 项目，导入到 Cloudflare，速度更快）
+
+#### 其他备选（如果你觉得 Jekyll 不顺手）
+- **Hexo + Fluid / NexT 主题**：中文教程最多，部署类似
+- **Hugo + PaperMod / FixIt**：构建速度最快（毫秒级）
+- **Astro + Starlight**：2026年最火，前端交互最强（但稍复杂）
+
+你觉得 Jekyll + Chirpy 这条路线怎么样？或者告诉我：
+- 你操作系统是什么（Win/Mac/Linux）？
+- 主要写技术还是生活随笔？
+- 愿意花时间学 Git 吗？预算多少？
+
+我可以给你更细的步骤或换其他方案～ 😄
